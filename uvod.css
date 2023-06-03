@@ -33,6 +33,7 @@ body {
     width: calc(100% - 50px);
     background: #002F70;
     transform: skew(-20deg);
+    
   }
   
   .modra-vysece {
@@ -42,6 +43,7 @@ body {
     height: 150px;
     width: 90px;
     background: #002F70;
+   
   }
   
   .support-bar img {
@@ -49,6 +51,7 @@ body {
     width: 150px;
     position: absolute;
     margin-left: -25%;
+   
   }
 
   .phone, .mail {
@@ -57,6 +60,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  
   }
   
   .phone {
@@ -79,10 +83,77 @@ body {
     font-size: 26px;
   }
 
+/* button----------- */
+
+.btnkontakt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #ff7700;
+  color: #fff;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  left: 60vh;
+  top: 30%;
+ }
+ 
+ .btnkontakt:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  color: #ff7700;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+ }
+ 
+ .btnkontakt:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  color: #ff7700;
+ }
+ 
+ .btnkontakt a {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+ .btnkontakt:hover a{
+  color: #ff7700;
+  animation: scaleUp 0.3s ease-in-out;
+ }
+ 
+ @keyframes scaleUp {
+  0% {
+   transform: scale(1);
+  }
+ 
+  50% {
+   transform: scale(0.95);
+  }
+ 
+  100% {
+   transform: scale(1);
+  }
+ }
 
 
   
- /* navbar */ 
+  
+ /* navbar----------- */ 
 
  .navbar {
     position: relative;

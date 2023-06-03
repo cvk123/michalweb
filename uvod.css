@@ -154,37 +154,32 @@ body {
   
   
  /* navbar----------- */ 
+  
 
  .navbar {
-    position: relative;
-    height: 100px;
+    position: fixed;
+    height: 0px;
     width: 80%;
-    margin-left: auto;
-    margin-right: 0;
-    
+    margin-top: 5px;
+    right: 0;
+    background: #002F70;
+    z-index: 9999;
+    transition: top 0.3s ease-in-out;
    
-    
-    
   }
+
+  
   
  .modry-pruh-navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100px;
+   position: fixed;
+    top: 175px;
+    height: 80px;
     width: calc(100% - 50px);
     background: #002F70;
     transform: skew(-20deg);
  }
 
- .modra-vysece-navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100px;
-    width: 90px;
-    background: #002F70;
- }
+
   
  
   .navbar-odkazy {
@@ -193,6 +188,8 @@ body {
     align-items: center;
     height: 100%;
     padding-right: 20px;
+    margin-top: 60px;
+    z-index: 2;
   }
   
   .navbar-odkazy li {
@@ -206,28 +203,83 @@ body {
     text-decoration: none;
     font-size: 26px;
     margin-left: 100px;
+   
+    
+    
   }
+
+  
 
   .navbar a:hover {
     color: #ff7700;
   }
 
-  .navbar a:active {
+  .navbar-odkazy li a.active {
     color: #ff7700;
   }
 
 
+/* MAIN SECTION */
 
+.main {
+  background-image: url("image/kamionheader.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  margin-top: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed; /* Přidáno pro efekt parallaxu */
+}
 
+.overlay {
+  background-color: rgba(43, 40, 40, 0.5); /* Zde můžete upravit hodnoty pro požadovaný odstín */
+  height: 100%;
+  width: 100%;
+}
 
+.overlay h1 {
+  font-size: 72px;
+  color: #fff;
+  margin-left: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 130px;
+}
 
+.overlay button {
+  left: 3rem;
+  top: -2rem;
+}
 
+h1 {
+  opacity: 0;
+  transform: translateY(100%);
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  
+}
 
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 
+button {
+  opacity: 0;
+  transform: translateY(100%);
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 
-
-
-
+}
 
 
 

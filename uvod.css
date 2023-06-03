@@ -1,0 +1,169 @@
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+
+/* BARVY
+    #ff7700 - oranzova
+    #fff - bila 
+    #002F70 - modra 
+
+*/
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* support bar */
+.support-bar {
+    position: relative;
+    height: 150px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .modry-pruh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: calc(100% - 50px);
+    background: #002F70;
+    transform: skew(-20deg);
+  }
+  
+  .modra-vysece {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+    width: 90px;
+    background: #002F70;
+  }
+  
+  .support-bar img {
+    margin-top: 2%;
+    width: 150px;
+    position: absolute;
+    margin-left: -25%;
+  }
+
+  .phone, .mail {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .phone {
+    left: 9vh;
+  }
+  
+  .mail {
+    left: 35vh;
+  }
+  
+  .phone img,
+  .mail img {
+    width: 60px;
+  }
+  
+  .phone p,
+  .mail p {
+    margin: 15px; 
+    color: #fff;
+    font-size: 26px;
+  }
+
+
+
+  
+ /* navbar */ 
+
+ .navbar {
+    position: relative;
+    height: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: 0;
+    
+   
+    
+    
+  }
+  
+ .modry-pruh-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: calc(100% - 50px);
+    background: #002F70;
+    transform: skew(-20deg);
+ }
+
+ .modra-vysece-navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 90px;
+    background: #002F70;
+ }
+  
+ 
+  .navbar-odkazy {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    padding-right: 20px;
+  }
+  
+  .navbar-odkazy li {
+    margin-left: 20px;
+    list-style: none;
+    z-index: 2;
+  }
+  
+  .navbar-odkazy li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 26px;
+    margin-left: 100px;
+  }
+
+  .navbar a:hover {
+    color: #ff7700;
+  }
+
+  .navbar a:active {
+    color: #ff7700;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer {
+    height: 20000px;
+  }

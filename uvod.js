@@ -61,3 +61,4 @@ odkazy.forEach(function(odkaz) {
     });
   });
 });
+

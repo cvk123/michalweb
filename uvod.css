@@ -8,6 +8,9 @@
 
 */
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
     padding: 0;
@@ -16,6 +19,11 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+p {
+  font-size: 18px;
+  color: #212427;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 /* support bar */
 .support-bar {
@@ -319,7 +327,7 @@ h2.onas::after {
 
 #onas {
   position: absolute;
-  top: 120%;
+  top: 122%;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 500px;
@@ -368,7 +376,7 @@ h2.sluzby  {
   font-size: 48px;
   position: relative; 
   margin-left: 25%;
-  margin-top: 600px;
+  margin-top: 620px;
 }
 
 h2.sluzby::after {
@@ -383,7 +391,7 @@ h2.sluzby::after {
 
 #sluzby {
   position: absolute;
-  top: 173%;
+  top: 175%;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 500px;
@@ -427,10 +435,80 @@ h2.sluzby::after {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
+/* KONTAKT----------- */
+
+#kontakt {
+  position: absolute;
+  top: 229%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 500px;
+  width: 1200px;
+  background-color: #e5e5e7;
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.informace {
+  width: calc(50% - 50px);
+  height: 100%;
+  background: #e5e5e7;
+  box-sizing: border-box;
+  padding: 30px 50px;
+}
+
+.mapa {
+  width: calc(50% + 50px);
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 100px solid #e5e5e7;
+  border-bottom: 500px solid transparent;
+}
+
+.phonekontakt {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.phonekontakt img {
+  margin-right: 10px; 
+}
+
+.mailkontakt{
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.mailkontakt.img {
+  margin-right: 20px; 
+}
+
+.phonekontakt p, a {
+  font-size: 30px;
+  text-decoration: none;
+}
 
 
+.mailkontakt p{
+ font-size: 30px;
+ padding-left: 20px; 
+}
 
 
-  footer {
-    
-  }
+footer {
+  margin-top: 600px;
+  bottom: 5px;
+  height: 100px;
+  background-color: #002F70;
+  
+}
+
+footer p {
+  color: #deeef3;
+  display: flex;
+  justify-content: center;
+  z-index: 9999;
+  padding-top: 50px;
+}

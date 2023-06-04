@@ -25,86 +25,120 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
-
-
-/* support bar */
-.support-bar {
-    position: relative;
-    height: 150px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: 0;
-  }
+/*------------- LOGO -------- */
+.logo-supportbar {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  display: flex;
+  top: 20px;
+  left: 5%;
+  z-index: 1;
   
-  .modry-pruh {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 150px;
-    width: calc(100% - 50px);
-    background: #002F70;
-    transform: skew(-20deg);
-    
-  }
   
-  .modra-vysece {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 150px;
-    width: 90px;
-    background: #002F70;
-   
-  }
-  
-  .support-bar img {
-    margin-top: 10px;
-    width: 150px;
-    position: absolute;
-    margin-left: -25%;
-   
-  }
+}
 
-  .phone, .mail {
+
+
+.trapezoid {
+  
+  position: absolute;
+  height: 200px;
+  margin-bottom: 20px;
+  width: 80%;
+  right: 0;
+  top: 0;
+ 
+}
+
+.trapezoid-right { 
+  border-bottom: 200px solid #002F70 ;
+  border-left: 100px solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 0 solid transparent
+}
+
+.bila-cira {
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.trapezoid-right .phone-supportbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+
+}
+  
+.trapezoid-right .mail-supportbar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+}
+
+.trapezoid-right .phone-supportbar img {
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+ 
+.trapezoid-right .mail-supportbar img {
+  margin-left: 400px;
+  margin-bottom: 12px;
+}
+
+.trapezoid-right .mail-supportbar p {
+  color: #fff;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.trapezoid-right .phone-supportbar p {
+  color: #fff;
+  font-size: 26px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+
+/*------------ NAVBAR V SUPPORT BARU-----**/
+
+
+.trapezoid-right .support-odkazy {
+   position: absolute;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    position: absolute;
-   
-    transform: translateY(-50%);
-    margin-top: 70px;
-  
+    height: 100%;
+    padding-right: 20px;
+    margin-top: 60px;
+  }
+
+  .trapezoid-right .support-odkazy li {
+    margin-right: 40px;
+    list-style: none;
+    margin-right: 100px;
   }
   
-  .phone {
-    left: 85px;
-    margin-top: 70px;
+  .trapezoid-right .support-odkazy a {
+    color: white;
   }
-  
-  .mail {
-    margin-top: 70px;
-    left: 400px;
-  }
-  
-  .phone img,
-  .mail img {
-    width: 60px;
-    
-  }
-  
-  .phone p,
-  .mail p {
-    margin: 15px; 
-    color: #fff;
-    font-size: 26px;
-    
+
+  .trapezoid-right .support-odkazy a:hover {
+    color: #ff7700;
   }
 
 /* button----------- */
 
 .btnkontakt {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,8 +148,9 @@ p {
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border: none;
-  left: 700px;
-  top: 30%;
+  left: 850px;
+  top: 20%;
+  
  }
  
  .btnkontakt:after {
@@ -127,6 +162,7 @@ p {
   position: absolute;
   transition: all 0.4s ease-in-out;
   right: 0;
+ 
  }
  
  .btnkontakt:hover::after {
@@ -134,6 +170,7 @@ p {
   left: 0;
   width: 100%;
   color: #ff7700;
+ 
  }
  
  .btnkontakt a {
@@ -183,6 +220,8 @@ p {
     background: #002F70;
     z-index: 9999;
     transition: top 0.3s ease-in-out;
+    display: none;
+    
    
   }
 
@@ -217,12 +256,14 @@ p {
     padding-right: 20px;
     margin-top: 60px;
     z-index: 2;
+    transform: none;
   }
   
   .navbar-odkazy li {
     margin-left: 20px;
     list-style: none;
     z-index: 2;
+    transform: none;
   }
   
   .navbar-odkazy li a {
@@ -230,16 +271,18 @@ p {
     text-decoration: none;
     font-size: 26px;
     margin-left: 100px;   
+   
   }
 
  img.logo {
   position: absolute;
    display: flex;
-    margin-top: -5px;
-    width: 100px;
-    margin-left: -12rem;
+    margin-top: 0px;
+    width: 90px;
+    margin-left: -16%;
     opacity: 0;
     cursor: pointer;
+    
   }
 
 
@@ -261,7 +304,7 @@ p {
   background-repeat: no-repeat;
   height: 70vh;
   width: 100%;
-  margin-top: 105px;
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -279,7 +322,7 @@ p {
   color: #fff;
   margin-left: 3rem;
   font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 130px;
+  margin-top: 50px;
 }
 
 .overlay button {
@@ -313,6 +356,60 @@ button {
   animation-fill-mode: forwards;
 
 }
+
+.btnkontakt1 {
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #ff7700;
+  color: #fff;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+  left: 850px;
+  top: 20%;
+  
+ }
+ 
+ .btnkontakt1:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #fff;
+  color: #ff7700;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+ 
+ }
+ 
+ .btnkontakt1:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+  color: #ff7700;
+ 
+ }
+ 
+ .btnkontakt1 a {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+ .btnkontakt1:hover a{
+  color: #ff7700;
+  animation: scaleUp 0.3s ease-in-out;
+ }
 
 
 /*----------- SEKCE ONAS ------ */
@@ -361,13 +458,13 @@ h2.onas::after {
   width: calc(50% + 50px);
   height: 100%;
   box-sizing: border-box;
-  border-left: 100px solid #e5e5e7;
+  /* border-left: 100px solid #e5e5e7; */
   border-bottom: 500px solid transparent;
   background: url(image/onaskamion1.jpg);
-  background-position: -50px -100px;
+  background-position: 0px -180px;
 }
 
-.o-nas-obrazek::before {
+/* .o-nas-obrazek::before {
   content:"";
   position: absolute;
   left: 40.1em;
@@ -379,7 +476,7 @@ h2.onas::after {
   background: url(image/onaskamion1.jpg);
   background-position: -50px -120px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-}
+} */
 
 /******* SLUZBY */
 
@@ -425,15 +522,15 @@ h2.sluzby::after {
   width: calc(50% + 50px);
   height: 100%;
   box-sizing: border-box;
-  border-left: 100px solid #e5e5e7;
+  /* border-left: 100px solid #e5e5e7; */
   border-bottom: 500px solid transparent;
   background: url(image/sluzbykamion1.jpg);
-  background-position: -50px -100px;
+  background-position: -10px -100px;
 }
 
 
 
-.sluzby-obrazek::before {
+/* .sluzby-obrazek::before {
   content:"";
   position: absolute;
   left: 40.1em;
@@ -445,7 +542,7 @@ h2.sluzby::after {
   background: url(image/sluzbykamion1.jpg);
   background-position: -50px -50px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-}
+} */
 
 /* KONTAKT----------- */
 

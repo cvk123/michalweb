@@ -4,12 +4,14 @@
       var modryPruh = document.querySelector('.modry-pruh-navbar');
       var navbarOdkazy = document.querySelector('.navbar-odkazy');
 
-      if (window.scrollY > 50) {
-        navbar.style.top = '0';
+      if (window.scrollY > 100) {
+        navbar.style.display = 'block';
+        navbar.style.top = '0px';
         modryPruh.style.top = '0';
         navbarOdkazy.style.bottom = '60px';
         navbarOdkazy.style.marginTop = '30px'; 
       } else {
+        navbar.style.display = 'none';
         navbar.style.top = '-80px';
         modryPruh.style.top = '175px';
         navbarOdkazy.style.marginTop = '290px'; 
@@ -86,3 +88,5 @@ ScrollReveal().reveal('.phonekontakt', {delay: 500, origin: "left",distance: "20
 ScrollReveal().reveal('.mailkontakt', {delay: 500, origin: "left",distance: "200px" });
 
 ScrollReveal().reveal('h2', {delay: 500, origin: "left",distance: "200px" });
+
+ScrollReveal().reveal('p', {delay: 500, origin: "left",distance: "200px" });

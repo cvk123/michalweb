@@ -4,6 +4,7 @@
     #ff7700 - oranzova
     #fff - bila 
     #002F70 - modra 
+    #212427 barva textu
 
 */
 
@@ -179,7 +180,15 @@ body {
     transform: skew(-20deg);
  }
 
-
+ .bily-pruh-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 79px;
+  width: 50vh; 
+  background: #ffffff; 
+  z-index: -1;
+}
   
  
   .navbar-odkazy {
@@ -206,8 +215,11 @@ body {
   }
 
  img.logo {
+  position: absolute;
+   display: flex;
+    margin-top: -5px;
     width: 100px;
-    margin-left: -10rem;
+    margin-left: -12rem;
     opacity: 0;
     cursor: pointer;
   }
@@ -285,11 +297,140 @@ button {
 }
 
 
+/*----------- SEKCE ONAS ------ */
+
+h2.onas {
+  color: #212427;
+  font-size: 48px;
+  position: relative; 
+  margin-left: 25%;
+}
+
+h2.onas::after {
+  content: "";
+  left: 0;
+  width: 20rem; 
+  height: 4px; 
+  background-color: #212427;
+  position: absolute;
+  bottom: -8px; 
+}
+
+
+#onas {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 500px;
+  width: 1200px;
+  background-color: #e5e5e7;
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.o-nas-text {
+  width: calc(50% - 50px);
+  height: 100%;
+  background: #e5e5e7;
+  box-sizing: border-box;
+  padding: 30px 50px;
+}
+
+.o-nas-obrazek {
+  width: calc(50% + 50px);
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 100px solid #e5e5e7;
+  border-bottom: 500px solid transparent;
+  background: url(image/onaskamion1.jpg);
+  background-position: -50px -100px;
+}
+
+.o-nas-obrazek::before {
+  content:"";
+  position: absolute;
+  left: 40.1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  background: #e5e5e7;
+  width: 40%;
+  height: 100%;
+  background: url(image/onaskamion1.jpg);
+  background-position: -50px -120px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+/******* SLUZBY */
+
+h2.sluzby  {
+  color: #212427;
+  font-size: 48px;
+  position: relative; 
+  margin-left: 25%;
+  margin-top: 600px;
+}
+
+h2.sluzby::after {
+  content: "";
+  left: 0;
+  width: 20rem; 
+  height: 4px; 
+  background-color: #212427;
+  position: absolute;
+  bottom: -8px; 
+}
+
+#sluzby {
+  position: absolute;
+  top: 173%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 500px;
+  width: 1200px;
+  background-color: #e5e5e7;
+  box-shadow: 0 25px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.sluzby-text {
+  width: calc(50% - 50px);
+  height: 100%;
+  background: #e5e5e7;
+  box-sizing: border-box;
+  padding: 30px 50px;
+}
+
+.sluzby-obrazek {
+  width: calc(50% + 50px);
+  height: 100%;
+  box-sizing: border-box;
+  border-left: 100px solid #e5e5e7;
+  border-bottom: 500px solid transparent;
+  background: url(image/sluzbykamion1.jpg);
+  background-position: -50px -100px;
+}
+
+
+
+.sluzby-obrazek::before {
+  content:"";
+  position: absolute;
+  left: 40.1em;
+  top: 50%;
+  transform: translateY(-50%) rotate(20deg);
+  background: #e5e5e7;
+  width: 40%;
+  height: 100%;
+  background: url(image/sluzbykamion1.jpg);
+  background-position: -50px -50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
 
 
 
 
 
   footer {
-    height: 20000px;
+    
   }

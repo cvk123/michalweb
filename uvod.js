@@ -20,12 +20,15 @@
     /**** LOGO ANIMACE v navbaru */
 
     window.addEventListener('scroll', function() {
-      var logo = this.document.querySelector('.logo');
+      var logo = document.querySelector('.logo');
+      var bilipruh = document.querySelector('.bily-pruh-navbar')
 
       if (window.scrollY > 150) {
-        logo.style.opacity = '1'; 
+        logo.style.opacity = '1';
+        bilipruh.style.opacity = '1';
       } else {
         logo.style.opacity = '0'; 
+        bilipruh.style.opacity = '0';
       }
     });
 

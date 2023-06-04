@@ -60,7 +60,7 @@ p {
   }
   
   .support-bar img {
-    margin-top: 2%;
+    margin-top: 10px;
     width: 150px;
     position: absolute;
     margin-left: -25%;
@@ -71,22 +71,26 @@ p {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 50%;
+   
     transform: translateY(-50%);
+    margin-top: 70px;
   
   }
   
   .phone {
-    left: 9vh;
+    left: 85px;
+    margin-top: 70px;
   }
   
   .mail {
-    left: 35vh;
+    margin-top: 70px;
+    left: 400px;
   }
   
   .phone img,
   .mail img {
     width: 60px;
+    
   }
   
   .phone p,
@@ -94,6 +98,7 @@ p {
     margin: 15px; 
     color: #fff;
     font-size: 26px;
+    
   }
 
 /* button----------- */
@@ -109,7 +114,7 @@ p {
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border: none;
-  left: 60vh;
+  left: 700px;
   top: 30%;
  }
  
@@ -313,10 +318,12 @@ button {
 /*----------- SEKCE ONAS ------ */
 
 h2.onas {
+  position: absolute;
   color: #212427;
   font-size: 48px;
   position: relative; 
   margin-left: 25%;
+  margin-top: 70px;
 }
 
 h2.onas::after {
@@ -332,7 +339,7 @@ h2.onas::after {
 
 #onas {
   position: absolute;
-  top: 122%;
+  margin-top: 250px;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 500px;
@@ -396,7 +403,7 @@ h2.sluzby::after {
 
 #sluzby {
   position: absolute;
-  top: 175%;
+  margin-top: 250px;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 500px;
@@ -444,7 +451,7 @@ h2.sluzby::after {
 
 #kontakt {
   position: absolute;
-  top: 229%;
+  margin-top: 250px;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 500px;

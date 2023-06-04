@@ -25,6 +25,10 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+
+
+
 /* support bar */
 .support-bar {
     position: relative;
@@ -183,7 +187,7 @@ p {
    position: fixed;
     top: 175px;
     height: 80px;
-    width: calc(100% - 50px);
+    width: 100%;
     background: #002F70;
     transform: skew(-20deg);
  }
@@ -196,6 +200,7 @@ p {
   width: 50vh; 
   background: #ffffff; 
   z-index: -1;
+  opacity: 0;
 }
   
  
@@ -512,3 +517,7 @@ footer p {
   z-index: 9999;
   padding-top: 50px;
 }
+
+
+/*** MEDIA QUERY --------------- */
+

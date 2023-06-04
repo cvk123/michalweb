@@ -62,3 +62,27 @@ odkazy.forEach(function(odkaz) {
   });
 });
 
+
+
+
+
+
+
+ScrollReveal({
+  reset: true,
+  easing: 'ease-in-out',
+  duration: 1000,
+  delay: 400
+});
+
+ScrollReveal().reveal('#onas', {delay: 500, distance: "60px"});
+ScrollReveal().reveal('.o-nas-text', {delay: 500, origin: "left",distance: "200px" });
+
+ScrollReveal().reveal('#sluzby', {delay: 500, distance: "60px"});
+ScrollReveal().reveal('.sluzby-text', {delay: 500, origin: "left",distance: "200px" });
+
+ScrollReveal().reveal('#kontakt', {delay: 500, distance: "60px"});
+ScrollReveal().reveal('.phonekontakt', {delay: 500, origin: "left",distance: "200px" });
+ScrollReveal().reveal('.mailkontakt', {delay: 500, origin: "left",distance: "200px" });
+
+ScrollReveal().reveal('h2', {delay: 500, origin: "left",distance: "200px" });

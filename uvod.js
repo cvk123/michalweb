@@ -38,6 +38,10 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    document.querySelector('.logo1').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
 
 
 /*** Active classy a odkazy */
@@ -89,4 +93,4 @@ ScrollReveal().reveal('.mailkontakt', {delay: 500, origin: "left",distance: "200
 
 ScrollReveal().reveal('h2', {delay: 500, origin: "left",distance: "200px" });
 
-ScrollReveal().reveal('p', {delay: 500, origin: "left",distance: "200px" });
+

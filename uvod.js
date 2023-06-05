@@ -68,6 +68,13 @@ odkazy.forEach(function(odkaz) {
   });
 });
 
+var menuItems = document.querySelectorAll('.menu li a');
+  menuItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+      var menuToggle = document.getElementById('menu-toggle');
+      menuToggle.checked = false; // Skryje menu
+    });
+  });
 
 
 
